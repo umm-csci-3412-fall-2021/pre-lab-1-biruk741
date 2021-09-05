@@ -2,7 +2,7 @@
 
 # generateFirst: generate output file for r0_input.txt
 generateFirst(){
-  R0=$(sed -E 's/\* ([a-zA-Z]+), ([a-zA-Z]+)/1. \1\n2. \2\n/' < r0_input.txt) || exit
+  R0=$(sed -E 's/\* ([a-zA-Z]+), ([a-zA-Z]+)/1. \1\n2. \2\n/' < r0_input.txt)
   echo "$R0" > r0_output.txt
 }
 
